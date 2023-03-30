@@ -1,0 +1,35 @@
+:root {
+    --task-bg-main: #fff;
+    --task-bg-wait: #cd4436;
+    --task-bg-check: #5bb137;
+    --form-grad-lf: #25d692;
+    --form-grad-rt: #979b28;
+    --form-active-btn: #009345;
+    --form-paginate-cl: #82b704;
+    --df-font-size: 16px;
+    --title-font-size: 20px;
+}
+
+.el-pagination {
+    padding: 2px 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.el-pager li{
+    background: none!important;
+    color: #000;
+}
+
+.el-pagination button:hover {
+    color: var(--form-paginate-cl);
+}
+.el-pager li.is-active, .el-pager li:hover {
+    color: var(--task-bg-main);
+    background: var(--form-paginate-cl)!important;
+}
+
+.el-pagination .btn-prev, .el-pagination .btn-next  {
+    background-color: transparent!important;
+}
